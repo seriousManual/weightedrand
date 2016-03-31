@@ -27,7 +27,9 @@ todos.set(laundry, 0.1)
 todos.set(rubbish, 0.1)
 todos.set(procrastinate, 0.7)
 
-var result = weightedrand(todos) //with a propability of nearly 70% the result would be the procrastinate object
+var result = weightedrand(todos)
+
+console.log(result) //with a propability of nearly 70% the result would be the procrastinate object
 ````
 
 Note that the result will be the exact same entry that has been provided in the weights map as a value.
