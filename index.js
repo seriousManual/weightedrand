@@ -1,7 +1,7 @@
 function wr(entriesMap) {
     var weightSum = Array
         .from(entriesMap.values())
-        .reduce((carray, value) => carray + value, 0)
+        .reduce((carry, value) => carry + value, 0)
 
     var choosenEntry = null
     var runningSum = 0
