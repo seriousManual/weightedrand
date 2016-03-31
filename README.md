@@ -36,7 +36,7 @@ Note that the result will be the exact same entry that has been provided in the 
 Due to the ES6 Map support it is not necessary to rely on serialisation.
 
 The weights supported as the values of the weight map are not subject to any restrictions, they can by below 1 or above and they do not have to add up to 1 (or 100) in sum.
-In the above example the sum is added up to 1 for clarity.
+In the above example the weights sum up to clarify the usage.
 
 # License
 The MIT License (MIT)
