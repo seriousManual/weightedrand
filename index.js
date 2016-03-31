@@ -1,4 +1,4 @@
-function wr(entriesMap) {
+function weightedrand(entriesMap) {
     var weightSum = Array
         .from(entriesMap.values())
         .reduce((carry, value) => carry + value, 0)
@@ -23,4 +23,4 @@ function wr(entriesMap) {
     return choosenEntry
 }
 
-module.exports = wr
+module.exports = weightedrand
