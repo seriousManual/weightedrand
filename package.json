@@ -11,11 +11,11 @@
     "url": "git+https://github.com/seriousManual/weightedrand.git"
   },
   "keywords": [
-    "rand",
-    "random",
+    "weighted rand",
+    "weighted random",
     "randomize",
     "weight",
-    "weighted"
+    "weights"
   ],
   "author": "Manuel Ernst <seriousstuff@gmx.de>",
   "license": "MIT",
