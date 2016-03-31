@@ -1,0 +1,32 @@
+{
+  "name": "weightedrand",
+  "version": "1.0.0",
+  "description": "returns a weighted random entry from a collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriousManual/weightedrand.git"
+  },
+  "keywords": [
+    "rand",
+    "random",
+    "randomize",
+    "weight",
+    "weighted"
+  ],
+  "author": "Manuel Ernst <seriousstuff@gmx.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seriousManual/weightedrand/issues"
+  },
+  "homepage": "https://github.com/seriousManual/weightedrand#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  },
+  "engines": {
+    "node": ">=4.0"
+  }
+}
