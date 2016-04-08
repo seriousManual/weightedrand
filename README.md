@@ -20,7 +20,7 @@ var laundry = {todo: 'do the laundry'}
 var rubbish = {todo: 'put the rubbish out'}
 var procrastinate = {todo: 'procrastinate'}
 
-//the element to weight map
+//the element-to-weight map
 var todos = new Map()
 todos.set(dishes, 0.1)
 todos.set(laundry, 0.1)
