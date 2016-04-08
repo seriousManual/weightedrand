@@ -12,7 +12,8 @@ npm install weightedrand
 `weightedrand` exports one function that accepts exactly one argument, returning the choosen element synchronously.
 
 ````javascript
-var weightedrand = require('weightedrand')
+var assert = require('assert')
+var weightedrand = require('./')
 
 // possible elements where one should be retrieved from, determined by a supplied weight
 var dishes = {todo: 'do the dishes'}
@@ -29,7 +30,14 @@ todos.set(procrastinate, 0.7)
 
 var result = weightedrand(todos)
 
-console.log(result) //with a propability of nearly 70% the result would be the procrastinate object
+assert(
+       result === dishes            //probability of 10%
+    || result === laundry           //probability of 10%
+    || result === rubbish           //probability of 10%
+    || result === procrastinate     //probability of 70%
+)
+
+console.log(result)
 ````
 
 Note that the result will be the exact same entry that has been provided in the weights map as a value.
