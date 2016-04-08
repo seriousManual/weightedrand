@@ -13,7 +13,7 @@ npm install weightedrand
 
 ````javascript
 var assert = require('assert')
-var weightedrand = require('./')
+var weightedrand = require('weightedrand')
 
 // possible elements where one should be retrieved from, determined by a supplied weight
 var dishes = {todo: 'do the dishes'}
