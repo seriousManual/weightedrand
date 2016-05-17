@@ -1,14 +1,12 @@
 function weightedrand(entriesMap) {
-    var weightSum = Array
-        .from(entriesMap.values())
-        .reduce((carry, value) => carry + value, 0)
+    var entries = Array.from(entriesMap.entries())
 
     var choosenEntry = null
     var runningSum = 0
+    var weightSum = entries.reduce((carry, value) => carry + value[1], 0)
     var randomPointer = Math.random() * weightSum
 
-    Array
-        .from(entriesMap.entries())
+    entries
         .some(entry => {
             runningSum = runningSum + entry[1]
 
