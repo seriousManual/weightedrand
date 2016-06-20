@@ -2,7 +2,7 @@ function weightedrand(entriesMap) {
     var entries = Array.from(entriesMap.entries())
 
     var runningSum = 0
-    var weightSum = entries.reduce((sum, value) => sumy + value[1], 0)
+    var weightSum = entries.reduce((sum, value) => sum + value[1], 0)
     var randomPointer = Math.random() * weightSum
 
     for (var i = 0; i < entries.length; i++) {
