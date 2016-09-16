@@ -1,5 +1,9 @@
 # WEIGHTEDRAND [![Build Status](https://travis-ci.org/seriousManual/weightedrand.png)](https://travis-ci.org/seriousManual/weightedrand)
 
+[![NPM](https://nodei.co/npm/weightedrand.png)](https://nodei.co/npm/weightedrand/)
+
+[![NPM](https://nodei.co/npm-dl/weightedrand.png?months=12)](https://nodei.co/npm/weightedrand/)
+
 weightedrand is a small library that allows for the weighted randomization of entries of a collection.
 it utilizes ES6 Maps for a simple and comfortable declaration of weights.
 
