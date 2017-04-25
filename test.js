@@ -36,4 +36,8 @@ expect(testMap.get(rubbish) / countRuns * 100).to.be.below(11)
 expect(testMap.get(procrastinate) / countRuns * 100).to.be.above(69)
 expect(testMap.get(procrastinate) / countRuns * 100).to.be.below(71)
 
+
+expect(wr(new Map())).to.be.null
+expect(wr(new Map([['foo', 1]]))).to.equal('foo')
+
 console.log('kthxbye')
