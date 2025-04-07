@@ -1,11 +1,15 @@
 import weightedrand from './index'
 
-const dishes = {todo: 'do the dishes'}
-const laundry = {todo: 'do the laundry'}
-const rubbish = {todo: 'put the rubbish out'}
-const procrastinate = {todo: 'procrastinate'}
+interface Todo {
+    job: string
+}
 
-const todos = new Map()
+const dishes = { job: 'do the dishes' }
+const laundry = { job: 'do the laundry' }
+const rubbish = { job: 'put the rubbish out' }
+const procrastinate = { job: 'procrastinate' }
+
+const todos = new Map<Todo, number>()
 todos.set(dishes, 0.1)
 todos.set(laundry, 0.1)
 todos.set(rubbish, 0.1)
