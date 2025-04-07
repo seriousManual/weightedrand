@@ -1,6 +1,6 @@
 {
   "name": "weightedrand",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "returns a weighted random entry from a collection",
   "main": "dist/index.js",
   "scripts": {
