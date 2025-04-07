@@ -4,6 +4,7 @@
   "description": "returns a weighted random entry from a collection",
   "main": "dist/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "tsc",
     "test": "tsx test.ts",
     "example": "tsx example.ts"
