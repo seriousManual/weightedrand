@@ -2,9 +2,11 @@
   "name": "weightedrand",
   "version": "1.2.0",
   "description": "returns a weighted random entry from a collection",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "tsc",
+    "test": "tsx test.ts",
+    "example": "tsx example.ts"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,9 @@
   },
   "homepage": "https://github.com/seriousManual/weightedrand#readme",
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^5.2.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=4.0"

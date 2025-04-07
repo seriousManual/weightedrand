@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "include": [
+      "index.ts"
+  ],
+  "exclude": [
+      "node_modules"
+  ],
+  "typeAcquisition": {
+      "enable": false
+  },
+  "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+          "*": [
+            "*"
+          ]
+      },
+      "outDir": "./dist/",
+      "diagnostics": false,
+      "sourceMap": false,
+      "alwaysStrict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "pretty": true,
+      "target": "ESNext",
+      "module": "ESNext",
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "declaration": true,
+      "experimentalDecorators": false,
+      "emitDecoratorMetadata": false,
+      "allowSyntheticDefaultImports": true,
+      "traceResolution": false
+  }
+}

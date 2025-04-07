@@ -1,22 +1,22 @@
-var expect = require('chai').expect
+import {expect} from 'chai'
 
-var wr = require('./')
+import wr from './index'
 
-var dishes = {todo: 'do the dishes'}
-var laundry = {todo: 'do the laundry'}
-var rubbish = {todo: 'put the rubbish out'}
-var procrastinate = {todo: 'procrastinate'}
+const dishes = {todo: 'do the dishes'}
+const laundry = {todo: 'do the laundry'}
+const rubbish = {todo: 'put the rubbish out'}
+const procrastinate = {todo: 'procrastinate'}
 
-var todos = new Map()
+const todos = new Map()
 todos.set(dishes, 0.1)
 todos.set(laundry, 0.1)
 todos.set(rubbish, 0.1)
 todos.set(procrastinate, 0.7)
 
-var countRuns = 100000
-var testMap = new Map()
-for (var i = 0; i < countRuns; i++) {
-    var rez = wr(todos)
+const countRuns = 100000
+const testMap = new Map()
+for (let i = 0; i < countRuns; i++) {
+    const rez = wr(todos)
     if (!testMap.has(rez)) {
         testMap.set(rez, 1)
     } else {
@@ -37,7 +37,7 @@ expect(testMap.get(procrastinate) / countRuns * 100).to.be.above(69)
 expect(testMap.get(procrastinate) / countRuns * 100).to.be.below(71)
 
 
-expect(wr(new Map())).to.be.null
+expect(wr(new Map())).to.be.undefined
 expect(wr(new Map([['foo', 1]]))).to.equal('foo')
 
 console.log('kthxbye')
