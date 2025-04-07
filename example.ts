@@ -17,11 +17,11 @@ todos.set(procrastinate, 0.7)
 
 const testMap = new Map()
 for (let i = 0; i < 100000; i++) {
-    const rez = weightedrand(todos)
-    if (!testMap.has(rez)) {
-        testMap.set(rez, 1)
+    const result = weightedrand(todos)
+    if (!testMap.has(result)) {
+        testMap.set(result, 1)
     } else {
-        testMap.set(rez, testMap.get(rez) + 1)
+        testMap.set(result, testMap.get(result) + 1)
     }
 }
 

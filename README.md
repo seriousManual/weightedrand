@@ -12,32 +12,36 @@ npm install weightedrand
 `weightedrand` exports one function that accepts exactly one argument, returning the choosen element synchronously.
 
 ````javascript
-var assert = require('assert')
-var weightedrand = require('weightedrand')
+import weightedrand from 'weightedrand'
+
+interface Todo {
+    job: string
+}
 
 // possible elements where one should be retrieved from, determined by a supplied weight
-var dishes = {todo: 'do the dishes'}
-var laundry = {todo: 'do the laundry'}
-var rubbish = {todo: 'put the rubbish out'}
-var procrastinate = {todo: 'procrastinate'}
+const dishes = { job: 'do the dishes' }
+const laundry = { job: 'do the laundry' }
+const rubbish = { job: 'put the rubbish out' }
+const procrastinate = { job: 'procrastinate' }
 
 //the element-to-weight map
-var todos = new Map()
+const todos = new Map<Todo, number>()
 todos.set(dishes, 0.1)
 todos.set(laundry, 0.1)
 todos.set(rubbish, 0.1)
 todos.set(procrastinate, 0.7)
 
-var result = weightedrand(todos)
+const testMap = new Map()
+for (let i = 0; i < 100000; i++) {
+    const result = weightedrand(todos)
+    if (!testMap.has(result)) {
+        testMap.set(result, 1)
+    } else {
+        testMap.set(result, testMap.get(result) + 1)
+    }
+}
 
-assert(
-       result === dishes            //probability of 10%
-    || result === laundry           //probability of 10%
-    || result === rubbish           //probability of 10%
-    || result === procrastinate     //probability of 70%
-)
-
-console.log(result)
+console.log(testMap)
 ````
 
 Note that the result will be the exact same entry that has been provided in the weights map as a value.
