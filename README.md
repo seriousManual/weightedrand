@@ -1,4 +1,4 @@
-# WEIGHTEDRAND [![Build Status](https://travis-ci.org/seriousManual/weightedrand.png)](https://travis-ci.org/seriousManual/weightedrand)
+# WEIGHTEDRAND
 
 weightedrand is a small library that allows for the weighted randomization of entries of a collection.
 it utilizes ES6 Maps for a simple and comfortable declaration of weights.

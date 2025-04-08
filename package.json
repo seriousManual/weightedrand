@@ -1,17 +1,23 @@
 {
   "name": "weightedrand",
+  "author": "Manuel Ernst <seriousstuff@gmx.de>",
+  "license": "MIT",
   "version": "2.0.3",
   "description": "returns a weighted random entry from a collection",
   "main": "dist/index.js",
+  "homepage": "https://github.com/seriousManual/weightedrand#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriousManual/weightedrand.git"
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
     "test": "tsx test.ts",
     "example": "tsx example.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seriousManual/weightedrand.git"
   },
   "keywords": [
     "weighted rand",
@@ -20,12 +26,9 @@
     "weight",
     "weights"
   ],
-  "author": "Manuel Ernst <seriousstuff@gmx.de>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/seriousManual/weightedrand/issues"
   },
-  "homepage": "https://github.com/seriousManual/weightedrand#readme",
   "devDependencies": {
     "chai": "^5.2.0",
     "tsx": "^4.19.3",
